@@ -58,7 +58,7 @@ const Navbar = () => {
 
       <Link to="/Kirish" className='flex justify-center items-center gap-4 p-2  w-25 h-10 rounded-xl  cursor-pointer hover:bg-gray-200'><FaUserAlt/>Kirish</Link>
       <Link to="/saralangan" className='flex justify-center items-center gap-4 p-2  w-25 h-10 rounded-xl  cursor-pointer hover:bg-gray-200'><FaHeart /> Saralangan</Link>
-      <Link className='flex justify-center items-center gap-4 p-2  w-25 h-10 rounded-xl  cursor-pointer hover:bg-gray-200'><IoBag  />Savat</Link>
+      <Link to="/Savat" className='flex justify-center items-center gap-4 p-2  w-25 h-10 rounded-xl  cursor-pointer hover:bg-gray-200'><IoBag  />Savat</Link>
     </div>
     <div className='flex justify-around mt-10 '>
      <button className='text-gray-500 cursor-pointer hover:text-black'>Mebel</button>

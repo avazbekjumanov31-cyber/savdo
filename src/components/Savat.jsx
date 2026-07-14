@@ -1,27 +1,29 @@
 import React from 'react'
 import { FaHeart } from "react-icons/fa";
 
-const Saralangan = ({ favorites, setFavorites }) => {
+const Savat = ({ cart, setCart }) => {
 
-  const removeFavorite = (id) => {
-    setFavorites(favorites.filter(item => item.id !== id));
+  const removeCart = (id) => {
+    setCart(cart.filter(item => item.id !== id));
   };
 
   return (
     <nav className='flex justify-around'>
       <div className='grid grid-cols-4 gap-5 mt-10 w-300'>
-        {favorites.map((item) => (
+
+        {cart.map((item) => (
           <div
             key={item.id}
             className='cursor-pointer hover:bg-amber-50 rounded-2xl'
           >
+
             <div className="relative overflow-hidden rounded-2xl group">
 
               <div
-                onClick={() => removeFavorite(item.id)}
+                onClick={() => removeCart(item.id)}
                 className="absolute top-3 right-3 bg-white rounded-full p-2 cursor-pointer z-50"
               >
-                <FaHeart className='text-red-500' />
+                <FaHeart className="text-red-500"/>
               </div>
 
               <img
@@ -29,6 +31,7 @@ const Saralangan = ({ favorites, setFavorites }) => {
                 alt=""
                 className="w-71 h-80 transition-transform duration-300 group-hover:scale-105"
               />
+
             </div>
 
             <p className='mt-5'>{item.narxi}</p>
@@ -37,14 +40,16 @@ const Saralangan = ({ favorites, setFavorites }) => {
             <p>{item.malumot2}</p>
             <p>{item.sharh}</p>
 
-            <button className='bg-fuchsia-500 w-71 h-10 cursor-pointer hover:bg-fuchsia-400 rounded-2xl text-white'>
+            <button className='bg-fuchsia-500 w-71 h-10 rounded-2xl text-white'>
               {item.buton}
             </button>
+
           </div>
         ))}
+
       </div>
     </nav>
   )
 }
 
-export default Saralangan
+export default Savat
