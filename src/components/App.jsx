@@ -16,13 +16,14 @@ import Buyurtma from './Buyurtma'
 import Card from './Card'
 
 
+
 const App = () => {
   return (
     <div>
        <Navbar/>
       
      <Routes>
-      
+      <Route path='/Yurakcha' element={<Yurakcha/>}/>
       <Route path='/Kirish' element={<Kirish/>}/>
       <Route path='/' element={  <Card/>}/>
       <Route path='/Footer'  element={<Footer/>}/>
