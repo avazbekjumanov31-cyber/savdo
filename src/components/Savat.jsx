@@ -39,7 +39,6 @@ const Savat = ({ cart, setCart }) => {
             <p>{item.malumot}</p>
             <p>{item.malumot2}</p>
             <p>{item.sharh}</p>
-
             <button className='bg-fuchsia-500 w-71 h-10 rounded-2xl text-white'>
               {item.buton}
             </button>
