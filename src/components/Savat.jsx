@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaHeart } from "react-icons/fa";
+import { FaTrash } from "react-icons/fa";
 
 const Savat = ({ cart, setCart }) => {
 
@@ -23,7 +23,7 @@ const Savat = ({ cart, setCart }) => {
                 onClick={() => removeCart(item.id)}
                 className="absolute top-3 right-3 bg-white rounded-full p-2 cursor-pointer z-50"
               >
-                <FaHeart className="text-red-500"/>
+                <FaTrash className="text-gray-600" />
               </div>
 
               <img
