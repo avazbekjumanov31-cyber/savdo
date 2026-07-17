@@ -33,7 +33,7 @@ const Navbar = () => {
      Sotuvchi bo‘lish
     </Link>
       <Link to="/topshirish" className='cursor-pointer text-fuchsia-600 hover:text-fuchsia-700'>
-           Topshirish punktini ochish
+          Topshirish punktini ochish
       </Link>
      <Link to="/savol" className=' cursor-pointer'>
            Savol-javob
